@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML File Tester</title>
+</head>
+<body>
+    I am adding my test embed code from heere to test.
+    <script>fetch("https://localsccoop.news/api/get-chatbot",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chatbotId:"65c223c7732422ced90be0a2",url:`${window.location.href}`})}).then(function(e){if(200===e.status)return e.text();throw new Error("Error fetching data, status code: "+e.status)}).then(function(e){var t=document.createElement("script");t.innerHTML=e,document.body.appendChild(t)}).catch(function(e){console.error("Fetch error: ",e)});</script>
+</body>
+</html>
